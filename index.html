@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div class="all">
+      <div class="weatherbox" id="weather">
+        <div></div>
+        <span></span>
+      </div>
+      <div class="big-box">
+        <div>
+          <div class="letter-style-1" id="date">0월 00일</div>
+          <div class="letter-style-2" id="clock">00:00</div>
+        </div>
+
+        <form class="hidden" id="login-form">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="What is your id"
+          />
+          <button>Log in</button>
+        </form>
+
+        <div>
+          <div class="hidden letter-style-3" id="greeting"></div>
+          <form class="hidden center" id="todo-form">
+            <input
+              required
+              type="text"
+              placeholder="Write a To do and Press Enter"
+            />
+          </form>
+          <ul class="hidden letter-style-4" id="todo-list"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="js/clock.js"></script>
+    <script src="js/login_todo.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/todo.js"></script>
+  </body>
+</html>
